@@ -93,29 +93,24 @@ header {
 }
 
 .imagen-fija {
-  background-image: url("bannerprincipal.jpeg"); /* 🔁 cambia por tu ruta */
-  background-size: cover;          /* Que siempre ocupe todo el ancho */
-  background-position: center;     /* Centrada */
-  background-repeat: no-repeat;
-  height: 400px;                   /* Altura visible */
-  width: 100%;
   position: relative;
+  width: 100%;
+  height: 400px; /* alto visible, puedes ajustarlo */
+  overflow: hidden; /* evita que la imagen se salga del contenedor */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* 🧱 Simula el efecto "fijo" solo en escritorio */
-@media (min-width: 769px) {
-  .imagen-fija {
-    background-attachment: fixed;  /* Hace que quede inmóvil */
-  }
-}
-
-/* 📱 Ajuste para móviles */
-@media (max-width: 768px) {
-  .imagen-fija {
-    height: 250px;                 /* Un poco más baja */
-    background-position: center center;
-    background-attachment: scroll; /* Evita bugs en móviles */
-  }
+.imagen-fija img {
+  max-width: 100%;       /* no más grande que el contenedor */
+  height: auto;          /* mantiene proporción */
+  object-fit: contain;   /* no se recorta */
+  object-position: center;
+  position: relative;
+  z-index: -1;
+  user-select: none;     /* evita que se seleccione por error */
+  pointer-events: none;  /* evita clics */
 }
 
 /* 🟨 NOSOTROS */
