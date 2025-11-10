@@ -95,7 +95,7 @@ header {
 .imagen-fija {
   position: relative;
   width: 100%;
-  height: 400px; /* alto visible, ajusta si quieres más o menos */
+  height: 100%; /* alto visible, ajusta si quieres más o menos */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -103,14 +103,16 @@ header {
   background-color: #0a192f; /* fondo por si la imagen no llena todo */
 }
 
-.imagen-fija img {
-  width: auto;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;     /* mantiene proporción y llena el espacio */
-  object-position: center;
-  user-select: none;
-  pointer-events: none;
+@media (max-width: 768px) {
+  .imagen-fija {
+    height: 500px;        /* más pequeña en móviles */
+  }
+
+  .imagen-fija img {
+    width: 100%;          /* ocupa el ancho del móvil */
+    height: auto;         /* mantiene proporción */
+    object-fit: contain;  /* no se recorta ni deforma */
+  }
 }
 
 /* 🟨 NOSOTROS */
