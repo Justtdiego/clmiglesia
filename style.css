@@ -1,0 +1,232 @@
+/* 🎨 ESTILO GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0a192f;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* 🟦 HEADER */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(10, 25, 47, 0.95);
+  padding: 20px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4db8ff;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #4db8ff;
+}
+
+/* 🟩 HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #4db8ff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #4db8ff;
+  color: #0a192f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #0a192f;
+}
+
+.banner-principal {
+  position: fixed;        /* 🔒 Hace que quede fija en pantalla */
+  top: 0;                 /* Ajusta la posición */
+  left: 0;
+  width: 100%;            /* Que ocupe todo el ancho */
+  height: auto;           /* Mantiene proporción */
+  z-index: -1;            /* La manda detrás del contenido */
+  opacity: 0.8;           /* Opcional, para que no distraiga */
+}
+
+/* 🟨 NOSOTROS */
+.nosotros {
+  background-color: #112240;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.nosotros h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #4db8ff;
+}
+
+.nosotros p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* 🟧 SECCIONES (Ministerios, Devocionales) */
+.servicios {
+  padding: 100px 20px;
+  text-align: center;
+  background-color: #0a192f;
+}
+
+.servicios h2 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #4db8ff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background-color: #112240;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* 📨 CONTACTO */
+.contacto {
+  background-color: #112240;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #4db8ff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #0a192f;
+  color: white;
+  outline: none;
+}
+
+form button {
+  background-color: #4db8ff;
+  color: #0a192f;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: white;
+}
+
+/* 🟥 FOOTER */
+footer {
+  background-color: #0a192f;
+  text-align: center;
+  padding: 30px;
+  color: #4db8ff;
+  font-size: 0.9rem;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
