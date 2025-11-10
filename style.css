@@ -95,22 +95,22 @@ header {
 .imagen-fija {
   position: relative;
   width: 100%;
-  height: 400px; /* alto visible, puedes ajustarlo */
-  overflow: hidden; /* evita que la imagen se salga del contenedor */
+  height: 400px; /* alto visible, ajusta si quieres más o menos */
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0a192f; /* fondo por si la imagen no llena todo */
 }
 
 .imagen-fija img {
-  max-width: 100%;       /* no más grande que el contenedor */
-  height: auto;          /* mantiene proporción */
-  object-fit: contain;   /* no se recorta */
+  width: auto;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;     /* mantiene proporción y llena el espacio */
   object-position: center;
-  position: relative;
-  z-index: -1;
-  user-select: none;     /* evita que se seleccione por error */
-  pointer-events: none;  /* evita clics */
+  user-select: none;
+  pointer-events: none;
 }
 
 /* 🟨 NOSOTROS */
