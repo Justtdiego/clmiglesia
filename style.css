@@ -92,31 +92,29 @@ header {
   color: #0a192f;
 }
 
-.banner-principal {
+.imagen-fija {
+  background-image: url("bannerprincipal.jpeg"); /* 🔁 cambia por tu ruta */
+  background-size: cover;          /* Que siempre ocupe todo el ancho */
+  background-position: center;     /* Centrada */
+  background-repeat: no-repeat;
+  height: 400px;                   /* Altura visible */
+  width: 100%;
   position: relative;
-  width: 100%;
-  height: 400px; /* Ajusta según el diseño */
-  overflow: hidden;
 }
 
-.banner-principal img {
-  position: fixed;        /* Se queda quieta al hacer scroll */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;          /* Ocupa todo el alto de la pantalla */
-  object-fit: cover;      /* Se adapta al tamaño sin deformarse */
-  z-index: -1;            /* Detrás del contenido */
-}
-
-/* 🧱 Ajuste para pantallas pequeñas */
-@media (max-width: 768px) {
-  .banner-principal {
-    height: 250px; /* Un poco más baja en móvil */
+/* 🧱 Simula el efecto "fijo" solo en escritorio */
+@media (min-width: 769px) {
+  .imagen-fija {
+    background-attachment: fixed;  /* Hace que quede inmóvil */
   }
+}
 
-  .banner-principal img {
-    object-position: center; /* Centra la parte visible */
+/* 📱 Ajuste para móviles */
+@media (max-width: 768px) {
+  .imagen-fija {
+    height: 250px;                 /* Un poco más baja */
+    background-position: center center;
+    background-attachment: scroll; /* Evita bugs en móviles */
   }
 }
 
