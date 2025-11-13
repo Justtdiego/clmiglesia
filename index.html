@@ -2,95 +2,174 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <!-- Opcional: evita zoom en móviles (activar solo si realmente quieres bloquear pinch-zoom) -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLM Puente Piedra</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- 🟦 ENCABEZADO -->
-  <header>
-    <div class="logo">CLM Puente Piedra</div>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#ministerios">Ministerios</a></li>
-        <li><a href="#devocionales">Devocionales</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- 🖼️ IMAGEN FIJA (contenedor) -->
-  <div class="imagen-fija">
-    <img src="bannerprincipal.jpeg" alt="Imagen CLM" />
+  <!-- 🔹 BARRA SUPERIOR -->
+  <div class="top-bar">
+    <div class="top-container">
+      <div class="top-item">
+        <span>Suscríbete a la agenda CLM</span>
+      </div>
+      <div class="top-item">
+        <span>Suscríbete al canal de WhatsApp</span>
+      </div>
+      <div class="top-item">
+        <span>Síguenos</span>
+        <div class="social-icons">
+          <a href="#">YouTube</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- 🟨 NOSOTROS -->
-  <section id="nosotros" class="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      En CLM Puente Piedra creemos en el poder transformador del amor de Dios.
-      Somos una comunidad cristiana comprometida con la fe, la adoración y el
-      servicio. Buscamos ser una luz en nuestra ciudad, guiando a las personas
-      hacia una relación viva con Cristo.
-    </p>
+  <!-- 🔹 ENCABEZADO PRINCIPAL -->
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="logo-clm.png" alt="Logo CLM" class="logo" />
+      </div>
+      <nav>
+  <a href="index.html">Inicio</a>
+  <a href="acerca.html">Acerca de CLM</a>
+
+  <!-- 🔽 MENÚ DESPLEGABLE CORREGIDO -->
+  <div class="dropdown">
+    <a class="dropdown-btn">Siguiente paso ▾</a>
+    <div class="dropdown-menu">
+      <a href="soy-nuevo.html">Soy nuevo</a>
+      <a href="esencia.html">Esencia</a>
+      <a href="un-nuevo-tu.html">Un nuevo tú</a>
+      <a href="bautismo.html">Bautismo</a>
+    </div>
+  </div>
+
+  <a href="oracion.html">Oración</a>
+  <a href="recursos.html">Recursos</a>
+  <a href="dar.html">Dar</a>
+</nav>
+
+
+    </div>
+  </header>
+
+  <!-- 🔹 BANNER PRINCIPAL -->
+  <section class="banner">
+    <img src="banneractualizado.jpg" alt="Banner CLM" class="banner-img" />
   </section>
 
-  <!-- 🟧 MINISTERIOS -->
-  <section id="ministerios" class="servicios">
-    <h2>Nuestros Ministerios</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Alabanza y Adoración</h3>
-        <p>Exaltamos el nombre de Dios con alegría, gratitud y excelencia musical.</p>
+  <!-- 🔹 MANTENTE CONECTADO -->
+  <section class="mantente-conectado">
+    <div class="titulo">
+      <h2>Mantente conectado</h2>
+      <p>Suscríbete a la agenda CLM para recibir lo que se viene en CLM cada semana.</p>
+      <a href="#" class="btn-negro">Suscribirse</a>
+    </div>
+
+    <div class="eventos-grid">
+      <div class="evento-card">
+        <img src="EBDV(Banner).jpg" alt="Evento 1" />
+        <p>¡Ya puedes conseguir tus entradas, para disfrutar de nuestra capacitación!</p>
+        <a href="#" class="btn-negro">Más Info</a>
       </div>
-      <div class="card">
-        <h3>Jóvenes CLM</h3>
-        <p>Formamos una nueva generación apasionada por Jesús y su palabra.</p>
+
+      <div class="evento-card">
+        <img src="DedicaciónNiños(Banner).jpg" alt="Evento 2" />
+        <p>Sé parte de Servolución por navidad, una campaña para bendecir a muchos niños llevándoles el amor de Dios.</p>
+        <a href="#" class="btn-negro">Más Info</a>
       </div>
-      <div class="card">
-        <h3>Niños con Propósito</h3>
-        <p>Enseñamos los valores del Reino desde temprana edad con amor y fe.</p>
+
+      <div class="evento-card">
+        <img src="MatriculasIbisep2026 (Banner).jpg" alt="Evento 3" />
+        <p>Prepárate para nuestro curso IBISEP, IV ciclo.</p>
+        <a href="#" class="btn-negro">Más Info</a>
+      </div>
+
+      <div class="evento-card">
+        <img src="EsenciaLecheEspiritual(Banner).jpg" alt="Evento 4" />
+        <p>Volvimos con nuestra leche espiritual!.</p>
+        <a href="#" class="btn-negro">Más Info</a>
       </div>
     </div>
   </section>
 
-  <!-- 🎥 DEVOCIONALES -->
-  <section id="devocionales" class="servicios">
-    <h2>Devocionales y Transmisiones</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Devocional Diario</h3>
-        <p>Reflexiona cada día con mensajes inspiradores y bíblicos.</p>
+  <!-- 🔹 SECCIÓN VOLUNTARIO -->
+  <section class="voluntario">
+    <div class="overlay">
+      <h2>¿DESEAS SER VOLUNTARIO?</h2>
+      <a href="#" class="btn-blanco">Más info</a>
+    </div>
+  </section>
+
+  <section class="ministerios">
+    <h2>Ministerios</h2>
+    <p class="subtitulo">¡Sé parte de nuestras reuniones presenciales!</p>
+    <p class="descripcion">Durante la semana puedes encontrar diversos mensajes en nuestras plataformas, encuentra más información aquí.</p>
+
+    <div class="ministerios-grid">
+      <div class="ministerio-card">
+        <img src="CultoNiños(Banner).jpg" alt="CLM Kids">
+        <p>CLM Kids es un espacio para que los más pequeños puedan disfrutar, divertirse.<br>Para niños desde 3 meses a 11 años</p>
+        <a href="#" class="btn-negro">Más info</a>
       </div>
-      <div class="card">
-        <h3>Transmisiones en Vivo</h3>
-        <p>Únete a nuestras reuniones en línea y vive la presencia de Dios.</p>
+
+      <div class="ministerio-card">
+        <img src="CultoTeens(Banner).jpg" alt="Generacion de Cambio">
+        <p>Servicios presenciales para chicos y chicas apartir de los 12 años hasta los 17 años todos los sábados a las 4:30pm.</p>
+        <a href="#" class="btn-negro">Más info</a>
       </div>
-      <div class="card">
-        <h3>Predicaciones Recientes</h3>
-        <p>Accede a las enseñanzas más recientes desde nuestra plataforma digital.</p>
+
+      <div class="ministerio-card">
+        <img src="CultoJovenes(Banner).jpg" alt="Ministerio Central">
+        <p>Servicio presencial para jóvenes apartir de 18 años en la iglesia CLM Puente Piedra a las 8pm.</p>
+        <a href="#" class="btn-negro">Más info</a>
       </div>
     </div>
   </section>
 
-  <!-- 📨 CONTACTO -->
-  <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <form>
-      <input type="text" placeholder="Nombre" required />
-      <input type="email" placeholder="Correo electrónico" required />
-      <textarea placeholder="Mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <!-- 🔹 SECCIÓN CRECER -->
+  <section class="crecer">
+    <div class="overlay">
+      <img src="ESENCIA.png" alt="Logo Crecer" class="crecer-logo" />
+      <p>
+        Si eres nuevo en la iglesia y te gustaría conocer más de Dios y de
+        clm puente piedra, te invitamos a las clases de Esencia todos jueves, online y presencial.
+      </p>
+      <a href="#" class="btn-blanco">Llevar Esencia</a>
+    </div>
   </section>
 
-  <!-- 🟥 FOOTER -->
+    <!-- 🔹 SECCIÓN SUSCRÍBETE A AGENDA CDV -->
+  <section class="suscripcion">
+    <div class="suscripcion-container">
+      <!-- Texto y formulario -->
+      <div class="suscripcion-texto">
+        <img src="correologo.png" alt="Correo" class="icono-correo" />
+        <h2>Suscríbete a agenda<br>clm</h2>
+        <p>¡Te enviaremos todo lo que sucede cada semana en clm para que no te pierdas de nada!</p>
+        <form class="form-suscripcion">
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+
+      <!-- Imagen de celular -->
+      <div class="suscripcion-imagen">
+        <img src="CELULAR.png" alt="Agenda CDV" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 🔹 FOOTER -->
   <footer>
     <p>© 2025 CLM Puente Piedra. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
